@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html {
+    font-size: 16px;
+}
+
+#navbar {
+    color: white;
+    background-color: #06005f;
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+
+}
+
+li {
+    list-style-type: none;
+    margin: 1.4rem 1.6rem;
+    font-size: 1.5rem;
+}
+
+#navbar a {
+    color: #d9dfe9;
+    font-size: 1.2rem;
+    transition: all 1s ease-in-out;
+}
+
+#navbar a:hover {
+    color: #45567d;
+    font-size: 1.5rem;
+}
+
+.mr-2 {
+    margin-right: 2rem;
+}
+
+#welcome-section {
+    height: 100vh;
+    background: rgb(34, 33, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#welcome-section h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    font-style: italic;
+    animation-name: head;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes head {
+    from {
+        margin-left: -1850px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
+}
+
+#welcome-section p {
+    font-style: italic;
+    font-size: 2rem;
+    color: #eeff00;
+    margin-left: -9rem;
+    animation-name: para;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes para {
+    from {
+        margin-right: -1850px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
+}
+
+#projects {
+    background-color: #45567d;
+    min-height: 100vh;
+}
+
+#projects>h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: aliceblue;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+.project-tile {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    height: 22rem;
+    width: 20rem;
+    margin: 2rem;
+    overflow-y: hidden;
+    transition: all 1s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(0.8);
+}
+
+.project-desc {
+    background-color: #333841;
+    width: 100%;
+    height: 19%;
+    margin-top: -5px;
+    color: wheat;
+
+}
+
+.card>p {
+    color: white;
+    text-align: center;
+    padding: 0.6rem;
+}
+
+.card>p>span {
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.card>img {
+    height: 87%;
+    width: 100%;
+}
+
+.project-btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+    outline: none;
+}
+
+.btn {
+    background-color: #333841;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background-color: #be3144;
+    transition: 1s ease-in-out;
+}
+
+.fa-brands,
+.fa-solid,
+.fa {
+    font-size: 2rem;
+    color: wheat;
+}
+
+footer {
+    height: max-content;
+    padding-bottom: 3rem;
+    background-color: #333841;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.foot-head {
+    margin: 3rem;
+}
+
+.foot-head h1 {
+    font-size: 4rem;
+}
+
+.foot-head p {
+    font-size: 1.5rem;
+    margin-left: 7rem;
+    font-style: italic;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#foot {
+    padding-top: 5rem;
+}
+
+hr {
+    margin-top: 4rem;
+    color: #be3144;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.rights {
+    margin: 0 10rem;
+    font-size: 1.4rem;
+    animation-name: footer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+}
+
+@keyframes footer {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.2;
+    }
+}
+
+.footer-link {
+    margin: 0 16px;
+    color: wheat;
+    font-size: 1.8rem;
+}
+
+.icon {
+    transition: all 0.7s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    /* padding-top: 0.8rem; */
+}
+
+.fa-linkedin:hover {
+    color: purple;
+}
+
+.fa-github:hover {
+    color: gray;
+}
+
+.fa-envelope:hover {
+    /* color: #4285F4; */
+    color: linear-gradient(to right, #0e4bad, #a9b7cf);
+    /* color: linear-gradient(to top,#4285F4,#d9dfe9); */
+}
+
+.fa-instagram:hover {
+    /* color: #8a3ab9; */
+    background:  linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2346 75%, #bc1888 100%);
+    overflow: hidden;
+}
+
+.fa-phone:hover {
+    color: blue;
+}
+
+@media screen and (max-width:768px) {
+    * {
+        font-size: 15px;
+    }
+
+    #welcome-section h1 {
+        margin-left: 2rem;
+    }
+
+    #welcome-section p {
+        margin-left: 2rem;
+    }
+
+    .social {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .social .icon {
+        margin: 12px;
+    }
+}

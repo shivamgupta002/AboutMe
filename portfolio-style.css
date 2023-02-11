@@ -41,7 +41,7 @@ ul:hover li a {
  ul:hover li a:not(:hover){
     color: white;
     opacity: 0.3;
-    filter: blur(10px);
+    filter: blur(1px);
 }    
 .mr-2 {
     margin-right: 2rem;

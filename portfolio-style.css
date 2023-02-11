@@ -28,17 +28,23 @@ li {
     font-size: 1.5rem;
 }
 
-#navbar a {
+#navbar ul li a {
     color: #d9dfe9;
     font-size: 1.2rem;
     transition: all 1s ease-in-out;
 }
 
-#navbar a:hover {
-    color: #45567d;
-    font-size: 1.5rem;
+#navbar ul:hover li a {
+/*     color: #45567d;
+    font-size: 1.5rem; */
+    color:#30edf4;
 }
 
+#navbar ul:hover li a:not(:hover){
+    color:white;
+    opacity:0.3;
+    filter:blur(3px);
+}    
 .mr-2 {
     margin-right: 2rem;
 }

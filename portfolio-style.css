@@ -28,22 +28,20 @@ li {
     font-size: 1.5rem;
 }
 
-#navbar ul li a {
+ul li a {
     color: #d9dfe9;
     font-size: 1.2rem;
     transition: all 1s ease-in-out;
 }
 
-#navbar ul:hover li a {
-/*     color: #45567d;
-    font-size: 1.5rem; */
-    color:#30edf4;
+ul:hover li a {
+    color: #30edf4;
 }
 
-#navbar ul:hover li a:not(:hover){
-    color:white;
-    opacity:0.3;
-    filter:blur(3px);
+ ul:hover li a:not(:hover){
+    color: white;
+    opacity: 0.3;
+    filter: blur(3px);
 }    
 .mr-2 {
     margin-right: 2rem;
@@ -279,13 +277,11 @@ hr {
 }
 
 .fa-envelope:hover {
-    /* color: #4285F4; */
     color: linear-gradient(to right, #0e4bad, #a9b7cf);
     /* color: linear-gradient(to top,#4285F4,#d9dfe9); */
 }
 
 .fa-instagram:hover {
-    /* color: #8a3ab9; */
     background:  linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2346 75%, #bc1888 100%);
     overflow: hidden;
 }
